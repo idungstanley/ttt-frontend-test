@@ -25,7 +25,7 @@ const Connect = () => {
           alt="connect"
         />
       </motion.div>
-      <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 lg:py-16 w-full">
+      <div className="lg:flex hidden flex-col lg:flex-row lg:items-center lg:justify-between gap-6 lg:py-16 w-full">
         <motion.h3
           className="lg:text-[42px] text-[30px] leading-[40px] lg:leading-[72px] lg:w-2/5 w-full"
           initial={{ opacity: 0, x: -100 }}
@@ -40,7 +40,7 @@ const Connect = () => {
           We connect our customers with the best, and help them keep up-and stay open.
         </motion.h3>
         <motion.div
-          className="lg:w-500px w-full lg:flex hidden flex-col gap-4 self-start"
+          className="lg:w-500px w-full flex flex-col gap-4 self-start"
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: [0, 1], x: [100, 0] }}
           transition={{
