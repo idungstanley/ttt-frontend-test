@@ -1,4 +1,4 @@
-import { CSSProperties } from "react";
+import { CSSProperties, SetStateAction } from "react";
 
 export interface ButtonProps {
     buttonStyle?: string;
@@ -24,6 +24,16 @@ export interface ButtonProps {
     customClasses?: string;
     style?: CSSProperties;
     labelClasses?: string;
+}
+
+export interface HamburgerProps {
+    isToggle: boolean;
+    color?: string;
+    size?: number;
+    width?: number;
+    height?: number;
+    toggleFn: React.Dispatch<SetStateAction<boolean>>;
+    classname?: string;
 }
 
 export interface InputDataTypes {

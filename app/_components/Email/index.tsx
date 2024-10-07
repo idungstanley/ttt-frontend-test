@@ -5,12 +5,12 @@ import Input from '../Input';
 
 const Email = () => {
   return (
-    <div className="bg-white p-[100px]">
+    <div className="bg-white p-6 lg:p-[100px]">
       <div className="flex items-center gap-10 flex-col justify-center bg-background p-10 rounded-3xl">
-        <h2 className="text-white text-[42px] leading-[72px] w-2/3 text-center">
+        <h2 className="text-white lg:text-[42px] text-[25px] leading-[40px] lg:leading-[72px] w-full lg:w-2/3 text-center">
           An enterprise template to ramp up your company website
         </h2>
-        <div className="flex items-center justify-around gap-10">
+        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-around lg:gap-10 gap-6">
           <Input
             name="email"
             type="email"

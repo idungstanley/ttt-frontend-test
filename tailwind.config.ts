@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'ellipses': "url('/Ellipse.png')",
+      },
       colors: {
         background: "#0A2640",
         green: "#65E4A3",

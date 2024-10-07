@@ -15,7 +15,7 @@ const TestimonialCard = ({
   id: number;
 }) => {
   return (
-    <div className="bg-white p-10 w-[350px] flex flex-col gap-10 rounded-md text-black">
+    <div className="bg-white p-10 w-full lg:w-[350px] flex flex-col gap-10 rounded-md text-black">
       <p className='w-[250px] text-[24px] leading-[36px]'>{`"${message}"`}</p>
       <div className="flex items-center gap-4">
         <Image

@@ -6,14 +6,14 @@ import Button from '../Button';
 
 const Blog = () => {
   return (
-    <div className="bg-white px-[100px] w-full text-black">
+    <div className="bg-white px-6 p-6 lg:px-[100px] w-full text-black">
       <div className="flex items-center justify-center flex-col w-full">
         <p className="text-gray-700">Blog</p>
-        <h1 className="text-black text-[42px] leading-[72px] w-2/3 text-center">
+        <h1 className="text-black lg:text-[42px] text-[30px] leading-[40px] lg:leading-[72px] w-full lg:w-2/3 text-center">
           Value proposition accelerator product management venture
         </h1>
       </div>
-      <div className="flex items-center justify-center gap-10 my-20">
+      <div className="flex flex-col lg:flex-row lg:items-center lg:justify-center gap-10 my-20">
         {CATEGORIES.map(({ image, name, category, date, icon, message }, index) => (
           <CategoryCard
             id={index}
@@ -27,7 +27,7 @@ const Blog = () => {
           />
         ))}
       </div>
-      <div className='flex items-center justify-center'>
+      <div className="flex items-center justify-center">
         <Button
           label="Load more"
           onClick={() => ({})}

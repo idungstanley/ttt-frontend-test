@@ -19,10 +19,10 @@ const CategoryCard = ({
   id: number;
 }) => {
   return (
-    <div className="max-w-[300px] h-[400px]">
+    <div className="lg:w-[300px] w-full h-[400px]">
       <div className="flex flex-col gap-2 h-full">
         <Image src={image} alt={`card-${id}`} height={400} width={400} className="rounded-3xl h-[200px]" />
-        <div className="flex flex-col justify-between gap-4 flex-grow">
+        <div className="flex flex-col lg:justify-between gap-4 flex-grow">
           <div className=''>
             <div className="flex items-center gap-2">
               <p className="font-bold">{category}</p>

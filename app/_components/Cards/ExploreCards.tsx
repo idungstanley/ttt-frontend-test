@@ -16,7 +16,7 @@ const ExploreCards = ({
   index: number;
 }) => {
   return (
-    <div className="max-w-[300px] h-[600px]">
+    <div className="lg:w-[300px] w-full h-[600px]">
       <div className="flex flex-col gap-2">
         <Image src={img} alt={`card ${index}`} height={400} width={400} />
         <h3 className="text-black">{title}</h3>

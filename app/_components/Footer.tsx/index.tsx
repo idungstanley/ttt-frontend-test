@@ -3,9 +3,9 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-white px-[100px] pb-[100px] text-black w-full text-[20px]">
-      <div className="flex items-center gap-56">
-        <div className="flex flex-col gap-10 w-2/4">
+    <footer className="bg-white px-6 lg:px-[100px] p-6 lg:pb-[100px] text-black w-full text-[20px]">
+      <div className="flex flex-col lg:flex-row lg:items-center gap-6 lg:gap-56">
+        <div className="flex flex-col gap-10 w-full lg:w-2/4">
           <Image src="/dark-logo.png" alt="logo" width={100} height={100} />
           <p className="text-gray">
             Social media validation business model canvas graphical user interface launch party creative facebook iPad
@@ -13,7 +13,7 @@ const Footer = () => {
           </p>
           <p className="text-gray">All rights reserved.</p>
         </div>
-        <div className="flex w-full items-center gap-32 self-start">
+        <div className="flex  w-full items-center gap-6 lg:gap-32 self-start">
           <div className="flex flex-col gap-8">
             <h4 className="font-bold">Landings</h4>
             <p className="text-gray">Home</p>
