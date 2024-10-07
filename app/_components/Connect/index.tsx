@@ -1,6 +1,6 @@
-'use client'
+'use client';
 import Image from 'next/image';
-import React from 'react'
+import React from 'react';
 import { FaChevronCircleDown } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
@@ -25,7 +25,7 @@ const Connect = () => {
           alt="connect"
         />
       </motion.div>
-      <div className="lg:flex hidden flex-col lg:flex-row lg:items-center lg:justify-between gap-6 lg:py-16 w-full">
+      <div className="lg:flex hidden items-center justify-between lg:py-16">
         <motion.h3
           className="lg:text-[42px] text-[30px] leading-[40px] lg:leading-[72px] lg:w-2/5 w-full"
           initial={{ opacity: 0, x: -100 }}
@@ -40,7 +40,7 @@ const Connect = () => {
           We connect our customers with the best, and help them keep up-and stay open.
         </motion.h3>
         <motion.div
-          className="lg:w-500px w-full flex flex-col gap-4 self-start"
+          className="max-w-500px flex flex-col gap-4 self-start"
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: [0, 1], x: [100, 0] }}
           transition={{
@@ -48,18 +48,18 @@ const Connect = () => {
             ease: 'easeInOut'
           }}
         >
-            <div className="flex flex-col lg:flex-row lg:items-center border-b border-gray py-4 gap-4 w-full">
-              <p className="lg:w-[400px] w-full">We connect our customers with the best?</p>
-              <FaChevronCircleDown className="lg:text-[20px] text-[15px]" />
-            </div>
-            <div className="flex flex-col lg:flex-row lg:items-center border-b border-gray py-4 gap-4 w-full">
-              <p className="w-full lg:w-[400px]">Android research & development rockstar?</p>
-              <FaChevronCircleDown className="lg:text-[20px] text-[15px]" />
-            </div>
+          <div className="flex items-center border-b border-gray py-4 gap-4">
+            <p className="w-[400px]">We connect our customers with the best?</p>
+            <FaChevronCircleDown className="lg:text-[20px] text-[15px]" />
+          </div>
+          <div className="flex items-center border-b border-gray py-4 gap-4">
+            <p className="w-[400px]">Android research & development rockstar?</p>
+            <FaChevronCircleDown className="lg:text-[20px] text-[15px]" />
+          </div>
         </motion.div>
       </div>
     </div>
   );
-}
+};
 
-export default Connect
+export default Connect;
