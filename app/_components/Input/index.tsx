@@ -25,8 +25,6 @@ function Input({
   labelClasses,
   isError,
   errorMessage,
-  handleSelect,
-  selectValue,
   keyDownFunc
 }: InputDataTypes) {
   const handleTrailingIconClick = () => {

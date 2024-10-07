@@ -3,9 +3,7 @@ import { TESTIMONIALS } from '@/app/constants';
 import React from 'react';
 import TestimonialCard from '../Cards/TestimonialCard';
 import { FaCircleArrowLeft, FaCircleArrowRight } from 'react-icons/fa6';
-import { FaChevronCircleDown } from 'react-icons/fa';
-import { motion } from 'framer-motion';
-import Image from 'next/image';
+
 
 const Testimonials = () => {
   return (

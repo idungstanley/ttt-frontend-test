@@ -1,9 +1,5 @@
 'use client';
-import { navOptions } from '@/app/constants';
-import Image from 'next/image';
-import Link from 'next/link';
 import React from 'react';
-import Button from '../Button';
 import DesktopNav from './DesktopNav';
 import MobileNav from './MobileNav';
 
